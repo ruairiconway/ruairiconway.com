@@ -1,0 +1,98 @@
+/* fonts
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+*/
+
+body {
+  cursor: alias;
+}
+
+/* disable text select */
+.disableSelect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* typestyles */
+.normalizeType {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10pt;
+  letter-spacing: 0.1em;
+  line-height: 100%;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* main-section */
+.mainWrapper {
+  position: relative;
+  height: 100vh; /*fallback for non Custom Proprties supportive browsers */
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100vw;
+}
+
+.blob {
+  position: absolute;
+  height: 85%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.titleGraphic {
+  position: absolute;
+  height: 85%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* sub-sections */
+.topBox {
+  position: absolute;
+  display: grid;
+  height: 7.5%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bottomBox {
+  position: absolute;
+  display: grid;
+  height: 7.5%;
+  width: 100%;
+  top: 92.5%;
+  left: 0;
+}
+
+.bottomBox a:hover {
+  text-decoration: line-through;
+}
+
+.centerContent {
+  margin: auto;
+}
+
+/* color changes - see myScripts.js */
+.blobColorChange {
+
+}
+
+.textColorChange {
+
+}
+
+
+
+/* MEDIA QUERIES + BROWSER TARGETING */
+@media only screen and (min-width: 400px) {
+  .blob {max-width: 450px;}
+  .titleGraphic {max-width: 450px;}
+}
